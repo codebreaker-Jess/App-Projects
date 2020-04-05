@@ -51,6 +51,4 @@ class KeyPad extends StatelessWidget {
                   ]
                 );
               }
-            
-              CalculatorKey({symbol}) {}
-}
+            }
