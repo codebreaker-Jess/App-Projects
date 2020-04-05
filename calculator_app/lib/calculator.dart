@@ -1,8 +1,8 @@
+import 'package:calculator_app/processor.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_calculator_demo/display.dart';
-import 'package:flutter_calculator_demo/key-controller.dart';
-import 'package:flutter_calculator_demo/key-pad.dart';
-import 'package:flutter_calculator_demo/processor.dart';
+import 'display.dart';
+import 'key-controller.dart';
+import 'key-pad.dart';
 
 class Calculator extends StatefulWidget {
 

@@ -1,5 +1,6 @@
 import 'dart:async';
-import 'package:flutter_calculator_demo/calculator-key.dart';
+
+import 'calculator-key.dart';
 
 class KeyEvent {
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_calculator_demo/key-controller.dart';
-import 'package:flutter_calculator_demo/key-symbol.dart';
+
+import 'key-controller.dart';
+import 'key-symbol.dart';
 
 abstract class Keys {
 
