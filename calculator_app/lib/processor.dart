@@ -1,8 +1,8 @@
 
 import 'dart:async';
-import 'package:flutter_calculator_demo/calculator-key.dart';
-import 'package:flutter_calculator_demo/key-controller.dart';
-import 'package:flutter_calculator_demo/key-symbol.dart';
+import 'calculator-key.dart';
+import 'key-controller.dart';
+import 'key-symbol.dart';
 
 abstract class Processor {
 
