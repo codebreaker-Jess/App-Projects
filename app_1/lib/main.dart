@@ -27,8 +27,7 @@ class TimerAppState extends State<TimerApp> {
 
   @override
   Widget build(BuildContext context) {
-    MaterialApp(
- debugShowCheckedModeBanner: false);
+    MaterialApp();
     if (timer == null)
       timer = Timer.periodic(duration, (Timer t) {
         handleTick();
