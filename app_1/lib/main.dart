@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
-
 void main() => runApp(TimerApp());
 class TimerApp extends StatefulWidget {
   @override
