@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 void main() => runApp(TimerApp());
-
 class TimerApp extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -41,7 +40,7 @@ class TimerAppState extends State<TimerApp> {
       title: 'Welcome to Flutter',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Timer'),
+          title: Text('My Timer'),
         ),
         body: Center(
           child: Column(
