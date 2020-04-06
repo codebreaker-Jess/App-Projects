@@ -46,7 +46,7 @@ class TimerAppState extends State<TimerApp> {
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text('End of Times Timer'),
+          title: Text('Timer'),
         ),
         body: Center(
           child: Column(
