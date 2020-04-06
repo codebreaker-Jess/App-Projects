@@ -11,12 +11,9 @@ class TimerApp extends StatefulWidget {
 
 class TimerAppState extends State<TimerApp> {
   static const duration = const Duration(seconds: 1);
-
   int secondsPassed = 0;
   bool isActive = false;
-
   Timer timer;
-
   void handleTick() {
     if (isActive) {
       setState(() {
