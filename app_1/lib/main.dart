@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
+
 void main() => runApp(TimerApp());
 class TimerApp extends StatefulWidget {
   @override
@@ -38,10 +39,14 @@ class TimerAppState extends State<TimerApp> {
     int hours = secondsPassed ~/ (60 * 60);
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Welcome to Flutter',
+      theme: ThemeData(
+        primarySwatch: Colors.red,
+      ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('My Timer'),
+          title: Text('End of Times Timer'),
         ),
         body: Center(
           child: Column(
@@ -99,7 +104,7 @@ class CustomTextContainer extends StatelessWidget {
             '$value',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 54,
+              fontSize: 60,
               fontWeight: FontWeight.bold,
             ),
           ),
