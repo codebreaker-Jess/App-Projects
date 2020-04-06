@@ -41,9 +41,10 @@ class TimerAppState extends State<TimerApp> {
       debugShowCheckedModeBanner: false,
       title: 'Welcome to Flutter',
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.purple,
       ),
       home: Scaffold(
+        backgroundColor: Colors.black,
         appBar: AppBar(
           title: Text('End of Times Timer'),
         ),
