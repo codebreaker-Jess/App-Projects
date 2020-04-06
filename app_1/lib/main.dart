@@ -27,6 +27,8 @@ class TimerAppState extends State<TimerApp> {
 
   @override
   Widget build(BuildContext context) {
+    MaterialApp(
+ debugShowCheckedModeBanner: false);
     if (timer == null)
       timer = Timer.periodic(duration, (Timer t) {
         handleTick();
@@ -89,7 +91,7 @@ class CustomTextContainer extends StatelessWidget {
       padding: EdgeInsets.all(20),
       decoration: new BoxDecoration(
         borderRadius: new BorderRadius.circular(10),
-        color: Colors.black87,
+        color: Colors.black,
       ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -105,7 +107,7 @@ class CustomTextContainer extends StatelessWidget {
           Text(
             '$label',
             style: TextStyle(
-              color: Colors.white70,
+              color: Colors.white,
             ),
           )
         ],
