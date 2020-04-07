@@ -40,8 +40,8 @@ class TimerAppState extends State<TimerApp> {
         ),
         body: Container(color: Colors.red),
     );
-  }
-          
+  } 
+  
   @override
     Widget build(BuildContext context) {
       MaterialApp();
