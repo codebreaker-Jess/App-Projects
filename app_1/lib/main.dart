@@ -23,24 +23,6 @@ class TimerAppState extends State<TimerApp> {
     }
   }
 
-@override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        bottomNavigationBar: CurvedNavigationBar(
-          backgroundColor: Colors.red,
-          items: <Widget>[
-            Icon(Icons.add, size: 30),
-            Icon(Icons.list, size: 30),
-            Icon(Icons.compare_arrows, size: 30),
-            Icon(Icons.call_split, size: 30),
-            Icon(Icons.perm_identity, size: 30),
-          ],
-          onTap: (index) {
-          },
-        ),
-        body: Container(color: Colors.blueAccent),
-    );
-  } 
   @override
   Widget build(BuildContext context) {
       MaterialApp();
@@ -135,3 +117,45 @@ class TimerAppState extends State<TimerApp> {
               );
             }
           }
+
+int _page = 0;
+  GlobalKey _bottomNavigationKey = GlobalKey();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        bottomNavigationBar: CurvedNavigationBar(
+          key: _bottomNavigationKey,
+          items: <Widget>[
+            Icon(Icons.add, size: 30),
+            Icon(Icons.list, size: 30),
+            Icon(Icons.compare_arrows, size: 30),
+            Icon(Icons.call_split, size: 30),  
+            Icon(Icons.perm_identity, size: 30),
+          ],
+          onTap: (index) {
+            setState(() {
+              _page = index;
+            });
+          },
+        ),
+        body: Container(
+          color: Colors.blueAccent,
+          child: Center(
+            child: Column(
+              children: <Widget>[
+                Text(_page.toString(), textScaleFactor: 10.0),
+                RaisedButton(
+                  child: Text('Go To Page of index 1'),
+                  onPressed: () {
+                    //Page change using state does the same as clicking index 1 navigation button
+                    final CurvedNavigationBarState navBarState =
+                        _bottomNavigationKey.currentState;
+                    navBarState.setPage(1);
+                  },
+                )
+              ],
+            ),
+          ),
+        ));
+      } 
