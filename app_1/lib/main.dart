@@ -38,12 +38,11 @@ class TimerAppState extends State<TimerApp> {
           onTap: (index) {
           },
         ),
-        body: Container(color: Colors.red),
+        body: Container(color: Colors.blueAccent),
     );
   } 
-  
   @override
-    Widget build(BuildContext context) {
+  Widget build(BuildContext context) {
       MaterialApp();
       if (timer == null)
       timer = Timer.periodic(duration, (Timer t) {
