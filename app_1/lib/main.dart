@@ -118,8 +118,6 @@ class TimerAppState extends State<TimerApp> {
             }
           }
 
- void main() => runApp(MaterialApp(home: BottomNavBar()));
-
 class BottomNavBar extends StatefulWidget {
   @override
   _BottomNavBarState createState() => _BottomNavBarState();
