@@ -41,7 +41,7 @@ class TimerAppState extends State<TimerApp> {
                   primarySwatch: Colors.red,
                 ),
                 home: Scaffold(
-                  backgroundColor: Colors.blueGrey,
+                  backgroundColor: Colors.green,
                   appBar: AppBar(
                     title: Text('Timer'),
                   ),
